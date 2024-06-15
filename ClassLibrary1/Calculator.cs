@@ -22,5 +22,10 @@ namespace CalculatorProject
         {
             return a * b;
         }
+
+        public double duv(int a, int b)
+        {
+            return 0.2;
+        }
     }
 }
