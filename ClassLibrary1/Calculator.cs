@@ -22,5 +22,10 @@ namespace CalculatorProject
         {
             return a * b;
         }
+
+        public float duv(float a, float b) 
+        {
+            return a/b;
+        }
     }
 }
