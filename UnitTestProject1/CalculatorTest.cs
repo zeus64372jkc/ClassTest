@@ -30,5 +30,11 @@ namespace UnitTestProject1
         {
             Assert.AreEqual(6, calculator.multiply(3, 2));
         }
+
+        [TestMethod]
+        public void testdivision()
+        {
+            Assert.AreEqual(2.0, calculator.division(6, 3));
+        }
     }
 }

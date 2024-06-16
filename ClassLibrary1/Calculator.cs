@@ -23,9 +23,9 @@ namespace CalculatorProject
             return a * b;
         }
 
-        public float duv(float a, float b) 
+        public double division(int a, int b) 
         {
-            return a/b;
+            return 0.0;
         }
     }
 }
