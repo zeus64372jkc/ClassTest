@@ -1,21 +1,15 @@
 pipeline {
     agent any
-
+    tools {
+        msbuild 'MSBuild2022'
+    }
     stages {
         stage('Build') {
             steps {
-                bat "mvn clean compile"
+                script {
+                    bat 'UnitTestProject1.sln /p:Configuration=Release %MSBUILD_ARGS%'
+                }
             }
         }
-        stage('Test') {
-            steps {
-                bat "mvn test"
-            }
-        }
-        stage('Deploy') {
-            steps {
-                bat "mvn package"                
-            }
-        }       
     }
 }
